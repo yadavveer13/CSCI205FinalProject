@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane style="-fx-border-color: &quot;0x0000FF&quot;;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.team09.ChatController">
+   <center>
+      <AnchorPane fx:id="mainAP" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="505.0" prefWidth="370.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="60.0" layoutY="43.0" prefHeight="0.0" prefWidth="206.0" text="BUCKCHAT" textFill="#0b28e8">
+               <font>
+                  <Font name="Apple LiGothic Medium" size="36.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.9210526347160339" green="0.5151072144508362" blue="0.051169589161872864" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Label>
+            <ScrollPane fx:id="mainSP" layoutX="60.0" layoutY="87.0" prefHeight="318.0" prefWidth="280.0">
+               <content>
+                  <VBox fx:id="messageVBox" prefHeight="316.0" prefWidth="277.0" />
+               </content>
+            </ScrollPane>
+            <TextField fx:id="messageField" layoutX="60.0" layoutY="405.0" prefHeight="28.0" prefWidth="222.0" />
+            <Button fx:id="sendButton" layoutX="282.0" layoutY="406.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="59.0" text="Send!" textFill="#320ed3" />
+            <Button fx:id="quitButton" layoutX="182.0" layoutY="460.0" mnemonicParsing="false" text="Quit!" textFill="#e18504" />
+            <ImageView fitHeight="65.0" fitWidth="74.0" layoutX="266.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                   <Image url="/buck_logo.png" />
+
+
+                  </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
